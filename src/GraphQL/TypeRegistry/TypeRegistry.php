@@ -26,9 +26,9 @@ class TypeRegistry implements TypeRegistryInterface
 	 * adds a given type to the registry
 	 *
 	 * @param Type $type
-	 * @return self
+	 * @return TypeRegistryInterface
 	 */
-	public function addType(Type $type): self
+	public function addType(Type $type): TypeRegistryInterface
 	{
 		$this->types[$type->name] = $this->prepareType($type);
 
